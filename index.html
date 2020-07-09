@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charse="UTF-8">
+    <title>Canvas Resize</title>
+    <style type="text/css">
+        canvas {
+            border: 1px solid rgb(20, 20, 20);
+            background: white;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+    <link rel= "stylesheet" href="graphics.css">
+</head>
+<body>
+    <canvas></canvas>
+   
+<div class="container">
+        <input type="text" placeholder="Name" id="User-input" style="visibility: hidden;">
+        <input type="text" placeholder="Color 1" id="colorVal1" style="visibility: hidden;">
+        <input type="text" placeholder="Color 2" id="colorVal2" style="visibility: hidden;">
+        <input type="text" placeholder="Color 3" id="colorVal3" style="visibility: hidden;">
+        <input type="text" placeholder="Background" id="background" style="visibility: hidden;"><br>
+        <input type="button" id="btnImage" value="Load Image">
+        <button class="btn btn1" onclick="changeTitle()">Name</button>
+        <button class="btn btn2" onclick="color1()">Color 1</button>
+        <button class="btn btn3" onclick="color2()">Color 2</button>
+        <button class="btn btn4" onclick="color3()">Color 3</button>
+        <button class="btn btn5" onclick="background()">Background</button>
+        <button class="btn btn6" onclick="reset()">Reset</button>
+        <!-- <button class="btn btn7" onclick="readSingleFile()">Upload Image</button> -->
+</div>
+<div class="name">
+    <label for="JeraldsProject">Created by: Jerald Hollingsworth</label>
+</div>
+<script src= "canvas2.js"></script>
+</body>    
+</html>
